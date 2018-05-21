@@ -1,0 +1,22 @@
+<div class="container">
+  <font face="East Sea Dokdo" size="5"><table class="table">
+    <thead>
+      <tr>
+        <th>제목</th>
+        <th>내용</th>
+        <th>글쓴 시간</th>
+      </tr>
+    </thead>
+    <tbody>
+        <% @posts.each do |p| %>
+      <tr>
+        <td><%= p.title %></td>
+        <td><%= p.content %></td>
+        <td><%= p.created_at %></td>
+      </tr>      
+      <% end %>
+    </tbody>
+  </table>
+</div>
+<a href="/post/new">작성하기</a>
+</font>
